@@ -1,0 +1,14 @@
+import 'dart:io';
+
+void main() {
+    
+    stdout.write("Digite qual o valor total da conta: ");
+    double total_conta = double.parse(stdin.readLineSync()!);
+
+    stdout.write("Digite por quantas pessoas quer dividir: ");
+    int pessoas = int.parse(stdin.readLineSync()!);
+
+    double valorPorPessoa = total_conta / pessoas;
+
+  print("Cada pessoa deve pagar: $valorPorPessoa");
+}
